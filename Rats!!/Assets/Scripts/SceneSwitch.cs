@@ -7,8 +7,15 @@ public class SceneSwitch : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    void OntriggerEnter(Collider other)
+    public Collider2D other;
+    //public int sceneIndex;
+    public string sceneName;
+
+    void OnTriggerEnter2D(Collider2D other)
     {
-        SceneManager.LoadScene(1);
+        if (other.CompareTag("Player"))
+        {
+            SceneManager.LoadScene(sceneName);
+        }
     }
 }
