@@ -6,9 +6,10 @@ using UnityEngine.SceneManagement;
 public class SceneSwitch : MonoBehaviour
 {
     // Start is called before the first frame update
+    // Add a potential scene switch animation (later on)
 
     public Collider2D other;
-    //public int sceneIndex;
+    //public int sceneIndex; <-- its easlier to use names
     public string sceneName;
 
     void OnTriggerEnter2D(Collider2D other)
