@@ -20,7 +20,7 @@ public class EnemyMove : Enemy
     void Start()
     {
       //get the player transform   
-playerTransform = FindObjectOfType<PlayerController2D>().GetComponent<Transform>();
+        playerTransform = FindObjectOfType<PlayerMove>().GetComponent<Transform>();
       //enemy animation and sprite renderer 
         //enemyAnim = gameObject.GetComponent<Animator>();
         enemySR = GetComponent<SpriteRenderer>();
