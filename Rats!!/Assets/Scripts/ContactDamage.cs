@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Threading;
+using UnityEngine.SceneManagement;
 
 public class ContactDamage : MonoBehaviour
 {
@@ -12,16 +13,20 @@ public class ContactDamage : MonoBehaviour
     public Collider2D anotherCollider;
     public GameObject[] healthBar;
     public int numHealth;
+    public string sceneName;
     // Start is called before the first frame update
     void Start()
     {
-        rat = GameObject.Find("Rat!");
+        rat = GameObject.Find("Rat");
         monster = GameObject.Find("monster");
         healthBar  = new GameObject[3];
         healthBar[0] = GameObject.FindWithTag("HealthOne");
         healthBar[1] = GameObject.FindWithTag("HealthTwo");
         healthBar[2] = GameObject.FindWithTag("HealthThree");
         numHealth = 3;
+        // healthBar[0].transform.position = new Vector3(-7, 6, 10);
+        // healthBar[1].transform.position = new Vector3(-6, 6, 10);
+        // healthBar[2].transform.position = new Vector3(-5, 6, 10);
     }
 
     // Update is called once per frame
@@ -31,11 +36,24 @@ public class ContactDamage : MonoBehaviour
         {
             if(objectCollider.IsTouching(anotherCollider))
             {
-                rat.transform.position = new Vector3(transform.position.x - 3, transform.position.y, -1);
+                int pushback = 0;
+                if(rat.transform.position.x > monster.transform.position.x)
+                {
+                    pushback = 3;
+                }
+                else
+                {
+                    pushback = -3;
+                }
+                rat.transform.position = new Vector3(transform.position.x + pushback, transform.position.y + 1, -1);
                 healthBar[numHealth - 1].transform.position = new Vector2(100, 100);
                 Thread.Sleep(100);
                 numHealth--;
             }
+        }
+        else
+        {
+            SceneManager.LoadScene(sceneName);
         }
 
     }
