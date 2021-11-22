@@ -11,12 +11,27 @@ public class SceneSwitch : MonoBehaviour
     public Collider2D other;
     //public int sceneIndex; <-- its easlier to use names
     public string sceneName;
+    public bool needTrigger = false;
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (!needTrigger)
         {
-            SceneManager.LoadScene(sceneName);
+            if (other.CompareTag("Player"))
+            {
+                SceneManager.LoadScene(sceneName);
+            }
+        }
+        else
+        {
+            if (other.CompareTag("Player"))
+            {
+                if (Input.GetKeyDown(KeyCode.Z))
+                {
+                    SceneManager.LoadScene(sceneName);
+                }
+            }
+
         }
     }
 }
