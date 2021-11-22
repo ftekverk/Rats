@@ -17,16 +17,16 @@ public class ContactDamage : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rat = GameObject.Find("Rat");
-        monster = GameObject.Find("monster");
+        rat = GameObject.FindWithTag("Player");
+        monster = GameObject.FindWithTag("Monster");
         healthBar  = new GameObject[3];
         healthBar[0] = GameObject.FindWithTag("HealthOne");
         healthBar[1] = GameObject.FindWithTag("HealthTwo");
         healthBar[2] = GameObject.FindWithTag("HealthThree");
         numHealth = 3;
-        // healthBar[0].transform.position = new Vector3(-7, 6, 10);
-        // healthBar[1].transform.position = new Vector3(-6, 6, 10);
-        // healthBar[2].transform.position = new Vector3(-5, 6, 10);
+        // healthBar[0].transform.position = new Vector3(-7, 4, -1);
+        // healthBar[1].transform.position = new Vector3(-6, 4, -1);
+        // healthBar[2].transform.position = new Vector3(-5, 4, -1);
     }
 
     // Update is called once per frame
