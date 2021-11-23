@@ -7,6 +7,7 @@ public class Enemy: MonoBehaviour
     int moveSpeed;
     int attackDamage;
     int lifePoints;
+    int currentHP;
     float attackRadius;
 
     //movement
@@ -81,10 +82,25 @@ public class Enemy: MonoBehaviour
             return false;
         }
     }
+
+    public void TakeDamage(int damage)
+    {
+        currentHP -= damage;
+
+        if (currentHP <= 0) {
+            Die();
+        }
+    }
+
+    void Die() {
+        GetComponent<SpriteRenderer>().enabled = false;
+        GetComponent<Collider2D>().enabled = false;
+        this.enabled = false;
+    }
     // Start is called before the first frame update
     void Start()
     {
-        
+        currentHP = lifePoints;
     }
 
     // Update is called once per frame
