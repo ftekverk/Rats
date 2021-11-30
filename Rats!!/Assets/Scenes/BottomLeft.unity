@@ -3895,6 +3895,7 @@ GameObject:
   - component: {fileID: 1517376502}
   - component: {fileID: 1517376503}
   - component: {fileID: 1517376504}
+  - component: {fileID: 1517376505}
   m_Layer: 0
   m_Name: Rat
   m_TagString: Player
@@ -4137,6 +4138,21 @@ MonoBehaviour:
   enemyLayers:
     serializedVersion: 2
     m_Bits: 128
+--- !u!114 &1517376505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1517376493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2beefa62a2b4d0441bb3b9329f1cf988, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: []
+  numHealth: 3
+  sceneName: 
 --- !u!1001 &1518302825
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4192,6 +4208,14 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4632512586539045354, guid: 116c73aec8d9acb47b68a56ec3808219, type: 3}
+      propertyPath: rat
+      value: 
+      objectReference: {fileID: 1517376493}
+    - target: {fileID: 4632512586539045355, guid: 116c73aec8d9acb47b68a56ec3808219, type: 3}
+      propertyPath: rat
+      value: 
+      objectReference: {fileID: 1517376493}
     - target: {fileID: 4632512586539045355, guid: 116c73aec8d9acb47b68a56ec3808219, type: 3}
       propertyPath: _attackRadius
       value: 0
@@ -4204,6 +4228,14 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 8193812478750278738, guid: 116c73aec8d9acb47b68a56ec3808219, type: 3}
+      propertyPath: playerhealth
+      value: 
+      objectReference: {fileID: 1517376505}
+    - target: {fileID: 8193812478750278738, guid: 116c73aec8d9acb47b68a56ec3808219, type: 3}
+      propertyPath: objectCollider
+      value: 
+      objectReference: {fileID: 1517376498}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 116c73aec8d9acb47b68a56ec3808219, type: 3}
 --- !u!1 &1723872354

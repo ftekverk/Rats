@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Threading;
 
 public class Rat_Combat : MonoBehaviour
 {
@@ -28,6 +29,7 @@ public class Rat_Combat : MonoBehaviour
 
         foreach(Collider2D enemy in hitEnemies) {
            enemy.GetComponent<Enemy>().TakeDamage(5);
+           Thread.Sleep(100);
         }
     }
 

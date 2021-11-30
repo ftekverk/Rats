@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4632512586539045354}
   - component: {fileID: 4632512586539045355}
   - component: {fileID: 4632512587182093868}
+  - component: {fileID: 8193812478750278738}
   m_Layer: 0
   m_Name: monster 1
   m_TagString: Monster
@@ -98,6 +99,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa0d583b8f70ebe48b13309619e2b831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  monster: {fileID: 4632512586539045356}
+  rat: {fileID: 0}
 --- !u!114 &4632512586539045355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110,6 +113,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee284aee30c940545864c6bdbbccb0fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  monster: {fileID: 4632512586539045356}
+  rat: {fileID: 0}
   _moveSpeed: 3
   _attackDamage: 1
   _lifePoints: 10
@@ -142,3 +147,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.63, y: 6}
   m_EdgeRadius: 0
+--- !u!114 &8193812478750278738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4632512586539045356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13a877547c247f74ba6ffd7be0c13579, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectCollider: {fileID: 0}
+  anotherCollider: {fileID: 4632512587182093868}
+  playerhealth: {fileID: 0}

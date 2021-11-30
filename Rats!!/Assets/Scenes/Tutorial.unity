@@ -331,6 +331,14 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4632512586539045354, guid: 116c73aec8d9acb47b68a56ec3808219, type: 3}
+      propertyPath: rat
+      value: 
+      objectReference: {fileID: 1517376493}
+    - target: {fileID: 4632512586539045354, guid: 116c73aec8d9acb47b68a56ec3808219, type: 3}
+      propertyPath: monster
+      value: 
+      objectReference: {fileID: 765827599}
     - target: {fileID: 4632512586539045355, guid: 116c73aec8d9acb47b68a56ec3808219, type: 3}
       propertyPath: _attackRadius
       value: 0
@@ -343,7 +351,8 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8193812478750278738, guid: 116c73aec8d9acb47b68a56ec3808219, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 116c73aec8d9acb47b68a56ec3808219, type: 3}
 --- !u!1 &765827599 stripped
 GameObject:
@@ -371,6 +380,26 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!61 &765827601 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 4632512587182093868, guid: 116c73aec8d9acb47b68a56ec3808219, type: 3}
+  m_PrefabInstance: {fileID: 618350529}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &765827606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765827599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13a877547c247f74ba6ffd7be0c13579, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectCollider: {fileID: 1517376498}
+  anotherCollider: {fileID: 765827601}
+  playerhealth: {fileID: 1517376505}
 --- !u!4 &1056071359 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3705449563623553162, guid: c2cc8eedbea50384c800e84275177dc1, type: 3}
@@ -6123,6 +6152,7 @@ GameObject:
   - component: {fileID: 1517376502}
   - component: {fileID: 1517376503}
   - component: {fileID: 1517376504}
+  - component: {fileID: 1517376505}
   m_Layer: 0
   m_Name: Rat
   m_TagString: Player
@@ -6318,7 +6348,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1517376493}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e2e80ad4c91455e46baf8b456047a0e0, type: 3}
   m_Name: 
@@ -6365,6 +6395,21 @@ MonoBehaviour:
   enemyLayers:
     serializedVersion: 2
     m_Bits: 128
+--- !u!114 &1517376505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1517376493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2beefa62a2b4d0441bb3b9329f1cf988, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: []
+  numHealth: 3
+  sceneName: Tutorial
 --- !u!1001 &1518302825
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6420,6 +6465,26 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4632512586539045354, guid: 116c73aec8d9acb47b68a56ec3808219, type: 3}
+      propertyPath: rat
+      value: 
+      objectReference: {fileID: 1517376493}
+    - target: {fileID: 4632512586539045354, guid: 116c73aec8d9acb47b68a56ec3808219, type: 3}
+      propertyPath: monster
+      value: 
+      objectReference: {fileID: 1916728616}
+    - target: {fileID: 4632512586539045355, guid: 116c73aec8d9acb47b68a56ec3808219, type: 3}
+      propertyPath: rat
+      value: 
+      objectReference: {fileID: 1517376493}
+    - target: {fileID: 4632512586539045355, guid: 116c73aec8d9acb47b68a56ec3808219, type: 3}
+      propertyPath: monster
+      value: 
+      objectReference: {fileID: 1916728616}
+    - target: {fileID: 4632512586539045355, guid: 116c73aec8d9acb47b68a56ec3808219, type: 3}
+      propertyPath: _lifePoints
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 4632512586539045355, guid: 116c73aec8d9acb47b68a56ec3808219, type: 3}
       propertyPath: _attackRadius
       value: 0
@@ -6432,7 +6497,8 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8193812478750278738, guid: 116c73aec8d9acb47b68a56ec3808219, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 116c73aec8d9acb47b68a56ec3808219, type: 3}
 --- !u!1 &1723872354
 GameObject:
@@ -6649,6 +6715,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1916728623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916728616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13a877547c247f74ba6ffd7be0c13579, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectCollider: {fileID: 1517376498}
+  anotherCollider: {fileID: 1916728617}
+  playerhealth: {fileID: 1517376505}
 --- !u!1 &1918228667
 GameObject:
   m_ObjectHideFlags: 0
@@ -6925,6 +7006,14 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4632512586539045354, guid: 116c73aec8d9acb47b68a56ec3808219, type: 3}
+      propertyPath: rat
+      value: 
+      objectReference: {fileID: 1517376493}
+    - target: {fileID: 4632512586539045354, guid: 116c73aec8d9acb47b68a56ec3808219, type: 3}
+      propertyPath: monster
+      value: 
+      objectReference: {fileID: 2127687322}
     - target: {fileID: 4632512586539045355, guid: 116c73aec8d9acb47b68a56ec3808219, type: 3}
       propertyPath: _attackRadius
       value: 0
@@ -6937,7 +7026,8 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8193812478750278738, guid: 116c73aec8d9acb47b68a56ec3808219, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 116c73aec8d9acb47b68a56ec3808219, type: 3}
 --- !u!1 &2127687322 stripped
 GameObject:
@@ -6965,3 +7055,23 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &2127687324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127687322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13a877547c247f74ba6ffd7be0c13579, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectCollider: {fileID: 1517376498}
+  anotherCollider: {fileID: 2127687325}
+  playerhealth: {fileID: 1517376505}
+--- !u!61 &2127687325 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 4632512587182093868, guid: 116c73aec8d9acb47b68a56ec3808219, type: 3}
+  m_PrefabInstance: {fileID: 2050796837}
+  m_PrefabAsset: {fileID: 0}

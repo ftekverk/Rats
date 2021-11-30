@@ -13,6 +13,9 @@ public class Enemy: MonoBehaviour
     //movement
     float followRadius;
 
+    public GameObject monster;
+    public GameObject rat;
+
     public void setMoveSpeed(int speed)
     {
         moveSpeed = speed;
@@ -89,6 +92,19 @@ public class Enemy: MonoBehaviour
 
         if (currentHP <= 0) {
             Die();
+        }
+        else
+        {
+            int pushback = 0;
+            if(rat.transform.position.x > monster.transform.position.x)
+            {
+                pushback = 3;
+            }
+            else
+            {
+                pushback = -3;
+            }
+            monster.transform.position = new Vector3(monster.transform.position.x + pushback, monster.transform.position.y + 1, -0);
         }
     }
 
