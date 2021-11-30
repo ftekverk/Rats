@@ -7,8 +7,8 @@ public class PlayerMove : MonoBehaviour {
       //public Animator animator;
        Rigidbody2D rb2D;
       private bool FaceRight = true; // determine which way player is facing.
-      public static float runSpeed = 10f;
-      public float startSpeed = 10f;
+      public static float runSpeed = 5f;
+      public float startSpeed = 5f;
       public bool isAlive = true;
       //public AudioSource WalkSFX;
       private Vector3 hMove;
@@ -42,12 +42,12 @@ public class PlayerMove : MonoBehaviour {
             }
       }
 
-      void FixedUpdate(){
-            //slow down on hills / stops sliding from velocity
-            if (hMove.x == 0){
-                  rb2D.velocity = new Vector2(rb2D.velocity.x / 1.1f, rb2D.velocity.y) ;
-            }
-      }
+     // void FixedUpdate(){
+      //      //slow down on hills / stops sliding from velocity
+       //     if (hMove.x == 0){
+        //          rb2D.velocity = new Vector2(rb2D.velocity.x / 1.1f, rb2D.velocity.y) ;
+         //   }
+      //}
 
       private void playerTurn(){
             // NOTE: Switch player facing label

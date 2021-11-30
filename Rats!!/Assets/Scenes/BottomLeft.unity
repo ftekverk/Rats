@@ -3914,8 +3914,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 361fb17b6c07a564ba14159c8faa67f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fallMultiplier: 2
-  lowJumpMultiplier: 1.5
+  fallMultiplier: 2.5
+  lowJumpMultiplier: 2.3
 --- !u!114 &1517376495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3929,7 +3929,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
-  jumpForce: 5
+  jumpForce: 5.5
   feet: {fileID: 244835573}
   groundLayer:
     serializedVersion: 2
@@ -3966,7 +3966,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 760df84def365104899f9b28ecac24d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startSpeed: 1
+  startSpeed: 2
   isAlive: 1
 --- !u!61 &1517376498
 BoxCollider2D:
