@@ -7171,6 +7171,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1517376493}
     - target: {fileID: 4632512586539045355, guid: 116c73aec8d9acb47b68a56ec3808219, type: 3}
+      propertyPath: _lifePoints
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632512586539045355, guid: 116c73aec8d9acb47b68a56ec3808219, type: 3}
       propertyPath: _attackRadius
       value: 0
       objectReference: {fileID: 0}

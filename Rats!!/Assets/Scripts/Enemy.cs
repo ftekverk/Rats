@@ -88,15 +88,17 @@ public class Enemy: MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        currentHP -= damage;
-
-        if (currentHP <= 0) {
+        lifePoints -= damage;
+        
+        Debug.Log(lifePoints);
+        
+        if (lifePoints <= 0) {
             Die();
         }
         else
         {
             int pushback = 0;
-            if(rat.transform.position.x > monster.transform.position.x)
+            if(rat.transform.position.x < monster.transform.position.x)
             {
                 pushback = 3;
             }
@@ -104,7 +106,7 @@ public class Enemy: MonoBehaviour
             {
                 pushback = -3;
             }
-            monster.transform.position = new Vector3(monster.transform.position.x + pushback, monster.transform.position.y + 1, -0);
+            monster.transform.position = new Vector3(monster.transform.position.x + pushback, monster.transform.position.y, -0);
         }
     }
 
@@ -116,7 +118,7 @@ public class Enemy: MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        currentHP = lifePoints;
+        lifePoints = 15;
     }
 
     // Update is called once per frame
