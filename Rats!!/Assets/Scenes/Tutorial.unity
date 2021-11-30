@@ -169,12 +169,24 @@ PrefabInstance:
       value: HealthOne
       objectReference: {fileID: 0}
     - target: {fileID: 898435696194936064, guid: c2cc8eedbea50384c800e84275177dc1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e753d14084adec149891797fae8ad5a5, type: 3}
+    - target: {fileID: 898435696194936064, guid: c2cc8eedbea50384c800e84275177dc1, type: 3}
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3705449563623553162, guid: c2cc8eedbea50384c800e84275177dc1, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705449563623553162, guid: c2cc8eedbea50384c800e84275177dc1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705449563623553162, guid: c2cc8eedbea50384c800e84275177dc1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 3705449563623553162, guid: c2cc8eedbea50384c800e84275177dc1, type: 3}
       propertyPath: m_LocalScale.z
@@ -6076,6 +6088,10 @@ PrefabInstance:
       value: HealthTwo
       objectReference: {fileID: 0}
     - target: {fileID: 898435696194936064, guid: c2cc8eedbea50384c800e84275177dc1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e753d14084adec149891797fae8ad5a5, type: 3}
+    - target: {fileID: 898435696194936064, guid: c2cc8eedbea50384c800e84275177dc1, type: 3}
       propertyPath: m_SortingLayer
       value: 0
       objectReference: {fileID: 0}
@@ -6090,6 +6106,14 @@ PrefabInstance:
     - target: {fileID: 3705449563623553162, guid: c2cc8eedbea50384c800e84275177dc1, type: 3}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705449563623553162, guid: c2cc8eedbea50384c800e84275177dc1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705449563623553162, guid: c2cc8eedbea50384c800e84275177dc1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 3705449563623553162, guid: c2cc8eedbea50384c800e84275177dc1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6902,12 +6926,24 @@ PrefabInstance:
       value: HealthThree
       objectReference: {fileID: 0}
     - target: {fileID: 898435696194936064, guid: c2cc8eedbea50384c800e84275177dc1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e753d14084adec149891797fae8ad5a5, type: 3}
+    - target: {fileID: 898435696194936064, guid: c2cc8eedbea50384c800e84275177dc1, type: 3}
       propertyPath: m_SortingOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3705449563623553162, guid: c2cc8eedbea50384c800e84275177dc1, type: 3}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705449563623553162, guid: c2cc8eedbea50384c800e84275177dc1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3705449563623553162, guid: c2cc8eedbea50384c800e84275177dc1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 3705449563623553162, guid: c2cc8eedbea50384c800e84275177dc1, type: 3}
       propertyPath: m_LocalPosition.x
