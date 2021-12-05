@@ -11604,13 +11604,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1517376493}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e2e80ad4c91455e46baf8b456047a0e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   objectCollider: {fileID: 1517376498}
-  anotherCollider: {fileID: 0}
+  anotherCollider: {fileID: 2127687325}
   healthBar: []
   numHealth: 3
   sceneName: Tutorial
