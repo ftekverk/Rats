@@ -446,7 +446,7 @@ GameObject:
   - component: {fileID: 669436682}
   - component: {fileID: 669436681}
   - component: {fileID: 669436683}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -513,7 +513,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 669436680}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.3658, y: -5.391569, z: 0}
+  m_LocalPosition: {x: 0.3658, y: -5, z: 0}
   m_LocalScale: {x: 20.825363, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -616,7 +616,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: []
   numHealth: 3
-  sceneName: Tutorial
+  sceneName: FlowingWater
 --- !u!114 &1633019462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -670,7 +670,7 @@ MonoBehaviour:
   anotherCollider: {fileID: 0}
   healthBar: []
   numHealth: 3
-  sceneName: Tutorial
+  sceneName: FlowingWater
 --- !u!114 &1633019465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -844,7 +844,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1633019460}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.92, y: -4.42, z: 0}
+  m_LocalPosition: {x: -4.92, y: -4.3, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_Children:
   - {fileID: 1986572489}
@@ -954,6 +954,7 @@ MonoBehaviour:
   moveRate: 2
   isVertical: 0
   startMove: 0
+  maxSpeed: 15
   moveTimer: 0
   rb2D: {fileID: 1705631498}
   forceVector: {x: 0, y: 0}
