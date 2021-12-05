@@ -5,11 +5,16 @@ using UnityEngine.UI;
 using System.Threading;
 using UnityEngine.SceneManagement;
 
-public class PlayerHealth : MonoBehaviour
+public class HitByWater : MonoBehaviour
 {
+    public Collider2D waterCollider;
+    public Rigidbody2D waterRb;
+    public Rigidbody2D rb;
+    public Collider2D ratBody;
     public GameObject[] healthBar;
     public int numHealth;
     public string sceneName;
+    public int knockupSpeed = 5;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,16 +31,23 @@ public class PlayerHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(numHealth > 0 && numHealth < 3)
+        if(numHealth > 0)
         {
-            healthBar[numHealth].transform.position = new Vector2(100, 100);
-            //Thread.Sleep(100);
+            if(ratBody.IsTouching(waterCollider))
+            {
+                rb.velocity = new Vector2(rb.velocity.x, waterRb.velocity.y + knockupSpeed);
+
+                healthBar[numHealth - 1].transform.position = new Vector2(100, 100);
+                Thread.Sleep(100);
+                numHealth--;
+            }
         }
-        else if (numHealth < 1)
+        else
         {
-            //send to checkpoint
-            //SceneManager.LoadScene(sceneName);
+          //  SceneManager.LoadScene(sceneName);
         }
 
     }
 }
+
+// GameObject.FindWithTag("Monster").transform.position = new Vector2(100, 100);
