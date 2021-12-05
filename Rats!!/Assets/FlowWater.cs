@@ -35,7 +35,7 @@ public class FlowWater : MonoBehaviour
                   } else if (isVertical == true) {
                          forceVector = new Vector2(0, moveForce);
                   }
-                  rb2D.velocity += (0.25f) * forceVector;
+                  rb2D.velocity += (0.25f)  * forceVector;
                   //rb2D.AddForce(forceVector);
            }
     }
