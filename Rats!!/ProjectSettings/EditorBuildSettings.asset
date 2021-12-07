@@ -27,7 +27,7 @@ EditorBuildSettings:
     path: Assets/Scenes/BottomRight.unity
     guid: 4c45450d559f8f342a27cf04712a6ced
   - enabled: 1
-    path: Assets/Scenes/Menu.unity
+    path: Assets/Scenes/New Levels/Menu.unity
     guid: 8835b3328558ebf4993c3019cec6439e
   - enabled: 1
     path: Assets/Scenes/New Levels/FlowingWater.unity
