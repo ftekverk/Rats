@@ -23,6 +23,7 @@ public class PlayerRespawn : MonoBehaviour
                 Debug.Log("I am going back to the last spawn point");
                 Vector3 pSpn2 = new Vector3(pSpawn.position.x, pSpawn.position.y, transform.position.z);
                 gameObject.transform.position = pSpn2;
+                healthscript.numHealth = 3;
             }
         }
     }
@@ -31,6 +32,7 @@ public class PlayerRespawn : MonoBehaviour
     {
         if (other.gameObject.tag == "CheckPoint")
         {
+            Debug.Log("Here!");
             pSpawn = other.gameObject.transform;
             GameObject thisCheckpoint = other.gameObject;
             //StopCoroutine(changeColor(other));
