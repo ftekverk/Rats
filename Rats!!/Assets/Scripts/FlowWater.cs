@@ -38,7 +38,7 @@ public class FlowWater : MonoBehaviour
                   }
 
                   //max our movespeed out at 15
-                  if(rb2D.velocity.y < maxSpeed) rb2D.velocity += (0.25f)  * forceVector;
+                  if(rb2D.velocity.y < maxSpeed) rb2D.velocity += (0.1f)  * forceVector;
            }
     }
 }
