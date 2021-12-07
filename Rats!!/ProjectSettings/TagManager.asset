@@ -9,6 +9,7 @@ TagManager:
   - Health
   - HealthTwo
   - HealthThree
+  - Checkpoint
   layers:
   - Default
   - TransparentFX
