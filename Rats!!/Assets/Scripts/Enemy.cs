@@ -52,13 +52,13 @@ public class Enemy: MonoBehaviour
     {
         followRadius = r;
     }
-    //attack radius 
+    //attack radius
     public void setAttackRadius(float r)
     {
         attackRadius = r;
     }
 
-    //if player in radius move toward him 
+    //if player in radius move toward him
     public bool checkFollowRadius(float playerPosition, float enemyPosition)
     {
         if(Mathf.Abs(playerPosition -enemyPosition) < followRadius)
@@ -126,6 +126,6 @@ public class Enemy: MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

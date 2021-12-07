@@ -53,7 +53,7 @@ public class ContactDamage : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene(sceneName);
+          //  SceneManager.LoadScene(sceneName);
         }
 
     }
