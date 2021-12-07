@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerRespawn : MonoBehaviour
 {
     public Transform pSpawn;       // current player spawn point
     public HitByWater healthscript;
+    bool reset_level = true;
 
     void Start()
     {
@@ -17,22 +19,31 @@ public class PlayerRespawn : MonoBehaviour
     {
         if (pSpawn != null)
         {
-            if (healthscript.numHealth <= 0)
-            {
-                //comment out lines from GameHandler about EndLose screen
-                Debug.Log("I am going back to the last spawn point");
-                Vector3 pSpn2 = new Vector3(pSpawn.position.x, pSpawn.position.y, transform.position.z);
-                gameObject.transform.position = pSpn2;
-            }
+            //comment out lines from GameHandler about EndLose screen
+            Debug.Log("I am going back to the last spawn point");
+            Vector3 pSpn2 = new Vector3(pSpawn.position.x, pSpawn.position.y, transform.position.z);
+            gameObject.transform.position = pSpn2;
         }
+
+        if (healthscript.numHealth <= 0)
+            {
+                if (reset_level)
+                {
+                    healthscript.numHealth = 3;
+                     SceneManager.LoadScene("FlowingWater");
+                }
+            }
+        
     }
 
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "CheckPoint")
         {
+            Debug.Log("Here!");
             pSpawn = other.gameObject.transform;
             GameObject thisCheckpoint = other.gameObject;
+            reset_level = false;
             //StopCoroutine(changeColor(other));
             //StartCoroutine(changeColor(other));
         }
