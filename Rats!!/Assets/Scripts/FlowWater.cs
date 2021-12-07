@@ -8,7 +8,7 @@ public class FlowWater : MonoBehaviour
   public float moveRate = 2f;
   public bool isVertical = false;
   public bool startMove = false;
-  public float maxSpeed = 15f;
+  public float maxSpeed = 8f;
   float moveForce;
   public float moveTimer = 0;
   public Rigidbody2D rb2D;
@@ -38,7 +38,12 @@ public class FlowWater : MonoBehaviour
                   }
 
                   //max our movespeed out at 15
-                  if(rb2D.velocity.y < maxSpeed) rb2D.velocity += (0.1f)  * forceVector;
+                  if(rb2D.velocity.y < maxSpeed) rb2D.velocity += (0.05f)  * forceVector;
            }
+    }
+
+    void resetWaterFlowFromCheckpoint() { 
+    
+    
     }
 }

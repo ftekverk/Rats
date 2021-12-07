@@ -17,43 +17,34 @@ public class PlayerRespawn : MonoBehaviour
 
     void Update()
     {
-        if (pSpawn != null)
+        if (healthscript.numHealth <= 0)
         {
+            healthscript.numHealth = 3;
             //comment out lines from GameHandler about EndLose screen
             Debug.Log("I am going back to the last spawn point");
-            Vector3 pSpn2 = new Vector3(pSpawn.position.x, pSpawn.position.y, transform.position.z);
-            gameObject.transform.position = pSpn2;
-        }
-
-        if (healthscript.numHealth <= 0)
+            if (reset_level)
             {
-                if (reset_level)
-                {
-                    healthscript.numHealth = 3;
-                     SceneManager.LoadScene("FlowingWater");
-                }
+               
+                SceneManager.LoadScene("FlowingWater");
             }
+            if (pSpawn != null)
+            {
+                Vector3 pSpn2 = new Vector3(pSpawn.position.x, pSpawn.position.y, transform.position.z);
+                gameObject.transform.position = pSpn2;
+            }
+        }
         
     }
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "CheckPoint")
+        if (other.gameObject.tag == "Checkpoint")
         {
-            Debug.Log("Here!");
             pSpawn = other.gameObject.transform;
             GameObject thisCheckpoint = other.gameObject;
             reset_level = false;
             //StopCoroutine(changeColor(other));
-            //StartCoroutine(changeColor(other));
+           // StartCoroutine(changeColor(other));
         }
-    }
-
-    IEnumerator changeColor(GameObject thisCheckpoint)
-    {
-        Renderer checkRend = thisCheckpoint.GetComponentInChildren<Renderer>();
-        checkRend.material.color = new Color(2.4f, 0.9f, 0.9f, 0.5f);
-        yield return new WaitForSeconds(0.5f);
-        checkRend.material.color = Color.white;
     }
 }
