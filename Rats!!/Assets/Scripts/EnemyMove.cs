@@ -28,7 +28,8 @@ public class EnemyMove : Enemy
         setMoveSpeed(_moveSpeed);
         setAttackDamage(_attackDamage);
         setLifePoints(_lifePoints);
-        Debug.Log(_lifePoints);
+        Debug.Log("getLifepoints: " + getLifePoints());
+        Debug.Log("lifepoints: " + _lifePoints);
         setAttackRadius(_attackRadius);
         setFollowRadius(_followRadius);
     }

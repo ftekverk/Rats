@@ -88,9 +88,11 @@ public class Enemy: MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        Debug.Log("lifepoints: " + getLifePoints());
+        
         lifePoints -= damage;
         
-        Debug.Log(lifePoints);
+        Debug.Log("lifepoints: " + getLifePoints());
         
         if (lifePoints <= 0) {
             Die();
@@ -118,7 +120,7 @@ public class Enemy: MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        lifePoints = 15;
+        
     }
 
     // Update is called once per frame
