@@ -7,10 +7,10 @@ public class LevelSelect : MonoBehaviour
 {
     public void Level1()
     {
-        SceneManager.LoadScene("LightDark");
+        SceneManager.LoadScene("FlowingWater");
     }
     public void Level2()
     {
-        SceneManager.LoadScene("FlowingWater");
+        SceneManager.LoadScene("LightDark");
     }
 }

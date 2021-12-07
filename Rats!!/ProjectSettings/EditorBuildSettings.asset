@@ -29,4 +29,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 8835b3328558ebf4993c3019cec6439e
+  - enabled: 1
+    path: Assets/Scenes/New Levels/FlowingWater.unity
+    guid: e672b85560f77432590774880edda085
+  - enabled: 1
+    path: Assets/Scenes/New Levels/LightDark.unity
+    guid: 9a03be2b8b0a2ec47a7c31447910ac2e
   m_configObjects: {}
