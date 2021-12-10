@@ -57,6 +57,10 @@ public class ContactDamage : MonoBehaviour
         }
 
     }
+
+    IEnumerator MyDelay(){
+      yield return new WaitForSeconds(1f);
+    }
 }
 
 // GameObject.FindWithTag("Monster").transform.position = new Vector2(100, 100);

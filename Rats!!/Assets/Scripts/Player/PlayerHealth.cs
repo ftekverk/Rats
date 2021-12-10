@@ -28,7 +28,9 @@ public class PlayerHealth : MonoBehaviour
     {
         if(numHealth > 0 && numHealth < 3)
         {
-            healthBar[numHealth].transform.position = new Vector2(100, 100);
+            healthBar[numHealth].SetActive(false);
+            //healthBar[numHealth].transform.position = new Vector2(100, 100);
+          //  StartCoroutine(MyDelay());
             //Thread.Sleep(100);
         }
         else if (numHealth < 1)
@@ -38,4 +40,6 @@ public class PlayerHealth : MonoBehaviour
         }
 
     }
+
+
 }
