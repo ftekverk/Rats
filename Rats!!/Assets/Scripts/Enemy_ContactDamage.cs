@@ -12,6 +12,7 @@ public class Enemy_ContactDamage : MonoBehaviour
     public Collider2D objectCollider;
     public Collider2D anotherCollider;
     public PlayerHealth playerhealth;
+    public bool canDamage = true;
     
     // Start is called before the first frame update
     void Start()
@@ -36,8 +37,23 @@ public class Enemy_ContactDamage : MonoBehaviour
             }
             rat.transform.position = new Vector3(transform.position.x + pushback, transform.position.y + 1, -1);
             
-            playerhealth.numHealth--;
+            
+
+            if(canDamage)
+            {
+                playerhealth.numHealth--;
+                canDamage = false;
+                StartCoroutine(DamageDelay());
+            }
+
         }
         
     }
+
+    IEnumerator DamageDelay()
+    {
+        yield return new WaitForSeconds(0.5f);
+        canDamage = true;
+    }
+
 }
