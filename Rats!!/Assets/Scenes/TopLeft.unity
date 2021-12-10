@@ -420,6 +420,7 @@ MonoBehaviour:
   objectCollider: {fileID: 1517376498}
   anotherCollider: {fileID: 765827601}
   playerhealth: {fileID: 1517376505}
+  canDamage: 1
 --- !u!4 &1056071359 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3705449563623553162, guid: c2cc8eedbea50384c800e84275177dc1, type: 3}
@@ -11490,6 +11491,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startSpeed: 1
   isAlive: 1
+  animator: {fileID: 1517376503}
 --- !u!61 &1517376498
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12301,6 +12303,7 @@ MonoBehaviour:
   objectCollider: {fileID: 1517376498}
   anotherCollider: {fileID: 2127687325}
   playerhealth: {fileID: 1517376505}
+  canDamage: 1
 --- !u!61 &2127687325 stripped
 BoxCollider2D:
   m_CorrespondingSourceObject: {fileID: 4632512587182093868, guid: 116c73aec8d9acb47b68a56ec3808219, type: 3}

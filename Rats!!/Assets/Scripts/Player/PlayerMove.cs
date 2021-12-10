@@ -12,6 +12,7 @@ public class PlayerMove : MonoBehaviour {
       public bool isAlive = true;
       //public AudioSource WalkSFX;
       private Vector3 hMove;
+      public Animator animator;
 
       void Start(){
             //animator = gameObject.GetComponentInChildren<Animator>();
@@ -22,7 +23,7 @@ public class PlayerMove : MonoBehaviour {
             //NOTE: Horizontal axis: [a] / left arrow is -1, [d] / right arrow is 1
            hMove = new Vector3(Input.GetAxis("Horizontal"), 0.0f, 0.0f);
            if (isAlive == true){
-                 
+                  //animator.SetTrigger("Attack");
                   transform.position = transform.position + hMove * runSpeed * Time.deltaTime;
             }
 

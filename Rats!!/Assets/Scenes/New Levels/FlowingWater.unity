@@ -1903,6 +1903,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startSpeed: 1
   isAlive: 1
+  animator: {fileID: 1633019463}
 --- !u!61 &1633019469
 BoxCollider2D:
   m_ObjectHideFlags: 0
