@@ -6573,8 +6573,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pSpawn: {fileID: 0}
   healthscript: {fileID: 1633019464}
-  playerRespawning: 0
   pSpn2: {x: 0, y: 0, z: 0}
+  waterScript: {fileID: 1203158211}
 --- !u!1001 &1895828074
 PrefabInstance:
   m_ObjectHideFlags: 0
