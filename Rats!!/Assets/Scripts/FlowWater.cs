@@ -13,6 +13,12 @@ public class FlowWater : MonoBehaviour
   public float moveTimer = 0;
   public Rigidbody2D rb2D;
   public Vector2 forceVector;
+
+     public HitByWater healthscript;
+    public Transform player;
+    public Vector3 respawnbuffer;
+    public PlayerRespawn respawnScript;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +28,10 @@ public class FlowWater : MonoBehaviour
 
     // Update is called once per frame
     void FixedUpdate(){
+        if (healthscript.numHealth <= 0) {
+            playerRespawningResetWater();
+        }
+
            moveTimer += 0.01f;
            if (moveTimer >= moveDelay){
                   startMove = true;
@@ -42,8 +52,11 @@ public class FlowWater : MonoBehaviour
            }
     }
 
-    void resetWaterFlowFromCheckpoint() { 
-    
-    
+    public void playerRespawningResetWater() {
+        Debug.Log("Here");
+        rb2D.velocity = new Vector2(0f, 0f);
+        transform.position = respawnScript.pSpn2 - respawnbuffer;
+        moveTimer = 0f;
     }
+
 }
