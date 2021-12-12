@@ -28,9 +28,9 @@ public class FlowWater : MonoBehaviour
 
     // Update is called once per frame
     void FixedUpdate(){
-        if (healthscript.numHealth <= 0) {
-            playerRespawningResetWater();
-        }
+       // if (healthscript.numHealth <= 0) {
+       //     playerRespawningResetWater();
+       // }
 
            moveTimer += 0.01f;
            if (moveTimer >= moveDelay){

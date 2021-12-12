@@ -11,6 +11,8 @@ public class PlayerRespawn : MonoBehaviour
     bool reset_level = true;
     public Vector3 pSpn2;
 
+    public FlowWater waterScript;
+
     void Start()
     {
        
@@ -20,6 +22,7 @@ public class PlayerRespawn : MonoBehaviour
     {
         if (healthscript.numHealth <= 0)
         {
+            waterScript.playerRespawningResetWater();
             healthscript.numHealth = 3;
             //comment out lines from GameHandler about EndLose screen
             Debug.Log("I am going back to the last spawn point");
