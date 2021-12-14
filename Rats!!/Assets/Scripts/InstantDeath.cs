@@ -9,7 +9,7 @@ public class InstantDeath : MonoBehaviour
 {
     public Collider2D objectCollider;
     public Collider2D anotherCollider;
-    public string sceneName;
+    public PlayerHealth playerhealth;
     
     // Start is called before the first frame update
     void Start()
@@ -21,7 +21,7 @@ public class InstantDeath : MonoBehaviour
     {
         if(objectCollider.IsTouching(anotherCollider))
         {
-            SceneManager.LoadScene(sceneName);
+            playerhealth.numHealth = 0;
         }
         
     }

@@ -36,7 +36,7 @@ public class PlayerHealth : MonoBehaviour
         else if (numHealth < 1)
         {
             //send to checkpoint
-            SceneManager.LoadScene(sceneName);
+            // SceneManager.LoadScene(sceneName);
         }
 
     }
