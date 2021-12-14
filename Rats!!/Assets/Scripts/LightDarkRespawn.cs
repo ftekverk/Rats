@@ -21,7 +21,6 @@ public class LightDarkRespawn : MonoBehaviour
         if (healthscript.numHealth <= 0)
         {
             //comment out lines from GameHandler about EndLose screen
-            Debug.Log("I am going back to the last spawn point");
             if (reset_level)
             {
                 SceneManager.LoadScene("LightDark");
