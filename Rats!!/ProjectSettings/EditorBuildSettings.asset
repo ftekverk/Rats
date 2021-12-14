@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/New Levels/LightDark.unity
     guid: 9a03be2b8b0a2ec47a7c31447910ac2e
+  - enabled: 1
+    path: Assets/Scenes/New Levels/TutorialScene.unity
+    guid: 009621d30ed6e40b28f86fcd0c6bb4c9
   m_configObjects: {}
