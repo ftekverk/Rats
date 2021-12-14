@@ -1470,7 +1470,7 @@ MonoBehaviour:
   moveRate: 2
   isVertical: 1
   startMove: 0
-  maxSpeed: 15
+  maxSpeed: 10
   moveTimer: 0
   rb2D: {fileID: 610850662}
   forceVector: {x: 0, y: 0}
