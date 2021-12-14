@@ -23,9 +23,6 @@ public class PlayerRespawn : MonoBehaviour
         if (healthscript.numHealth <= 0)
         {
             waterScript.playerRespawningResetWater();
-            healthscript.numHealth = 3;
-            //comment out lines from GameHandler about EndLose screen
-            Debug.Log("I am going back to the last spawn point");
             if (reset_level)
             {
                 SceneManager.LoadScene("FlowingWater");
@@ -34,6 +31,10 @@ public class PlayerRespawn : MonoBehaviour
             {
                  pSpn2 = new Vector3(pSpawn.position.x, pSpawn.position.y, transform.position.z);
                 gameObject.transform.position = pSpn2;
+                healthscript.numHealth = 3;
+                healthscript.healthBar[0].SetActive(true);
+                healthscript.healthBar[1].SetActive(true);
+                healthscript.healthBar[2].SetActive(true);
             }
         }
 
