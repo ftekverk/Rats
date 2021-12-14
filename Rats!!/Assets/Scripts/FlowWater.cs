@@ -16,7 +16,6 @@ public class FlowWater : MonoBehaviour
 
      public HitByWater healthscript;
     public Transform player;
-    public Vector3 respawnbuffer;
     public PlayerRespawn respawnScript;
 
     // Start is called before the first frame update
@@ -53,9 +52,8 @@ public class FlowWater : MonoBehaviour
     }
 
     public void playerRespawningResetWater() {
-        Debug.Log("Here");
         rb2D.velocity = new Vector2(0f, 0f);
-        transform.position = respawnScript.pSpn2 - respawnbuffer;
+        transform.position = respawnScript.pSpn2 - new Vector3(0f, 10f, 0f);
         moveTimer = 0f;
     }
 

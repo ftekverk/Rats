@@ -22,15 +22,16 @@ public class PlayerRespawn : MonoBehaviour
     {
         if (healthscript.numHealth <= 0)
         {
-            waterScript.playerRespawningResetWater();
+            
             if (reset_level)
             {
                 SceneManager.LoadScene("FlowingWater");
             }
             if (pSpawn != null)
             {
-                 pSpn2 = new Vector3(pSpawn.position.x, pSpawn.position.y, transform.position.z);
+                pSpn2 = new Vector3(pSpawn.position.x, pSpawn.position.y, transform.position.z);
                 gameObject.transform.position = pSpn2;
+                waterScript.playerRespawningResetWater();
                 healthscript.numHealth = 3;
                 healthscript.healthBar[0].SetActive(true);
                 healthscript.healthBar[1].SetActive(true);
