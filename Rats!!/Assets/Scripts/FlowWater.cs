@@ -5,7 +5,7 @@ using UnityEngine;
 public class FlowWater : MonoBehaviour
 {
   public float moveDelay = 2f;
-  public float moveRate = 2f;
+  public float moveRate = 1.8f;
   public bool isVertical = false;
   public bool startMove = false;
   public float maxSpeed = 8f;
@@ -47,7 +47,7 @@ public class FlowWater : MonoBehaviour
                   }
 
                   //max our movespeed out at 15
-                  if(rb2D.velocity.y < maxSpeed) rb2D.velocity += (0.05f)  * forceVector;
+                  if(rb2D.velocity.y < maxSpeed) rb2D.velocity += (0.04f)  * forceVector;
            }
     }
 
