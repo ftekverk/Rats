@@ -2818,7 +2818,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveDelay: 1
-  moveRate: 1.2
+  moveRate: 1.4
   isVertical: 1
   startMove: 0
   maxSpeed: 3
