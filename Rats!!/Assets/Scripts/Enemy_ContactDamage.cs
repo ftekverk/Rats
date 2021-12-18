@@ -26,25 +26,27 @@ public class Enemy_ContactDamage : MonoBehaviour
     {
         if(objectCollider.IsTouching(anotherCollider))
         {
-            if(playerhealth.numHealth > 0)
+            if(playerhealth.numHealth > 0 && canDamage)
             {
-                int pushback = 0;
-                if(rat.transform.position.x > monster.transform.position.x)
+                if(playerhealth.numHealth > 1)
                 {
-                    pushback = 3;
+                    int pushback = 0;
+                    if(rat.transform.position.x > monster.transform.position.x)
+                    {
+                        pushback = 3;
+                    }
+                    else
+                    {
+                        pushback = -3;
+                    }
+                    rat.transform.position = new Vector3(transform.position.x + pushback, transform.position.y + 1, -1);
                 }
-                else
-                {
-                    pushback = -3;
-                }
-                rat.transform.position = new Vector3(transform.position.x + pushback, transform.position.y + 1, -1);
 
-                if(canDamage)
-                {
-                    playerhealth.numHealth--;
-                    canDamage = false;
-                    StartCoroutine(DamageDelay());
-                }
+                
+                playerhealth.numHealth--;
+                canDamage = false;
+                StartCoroutine(DamageDelay());
+                
             }
             
 
