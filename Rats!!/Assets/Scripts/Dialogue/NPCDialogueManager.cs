@@ -11,30 +11,35 @@ public class NPCDialogueManager : MonoBehaviour {
        public int counter = 0;
        public int dialogueLength;
 
+       public GameObject dialogueBG;
+
        void Start(){
               dialogueBox.SetActive(false);
+              dialogueBG.SetActive(false);
               dialogueLength = dialogue.Length; //allows us test dialogue without an NPC
        }
 
        void Update(){
               //temporary testing before NPC is created
-              if (Input.GetKeyDown("o")){
-                     dialogueBox.SetActive(true);
-              }
-              if (Input.GetKeyDown("p")){
-                     dialogueBox.SetActive(false);
-                     dialogueText.text = "..."; //reset text
-                     counter = 0; //reset counter
-              }
+              // if (Input.GetKeyDown("o")){
+              //        dialogueBox.SetActive(true);
+              // }
+              // if (Input.GetKeyDown("p")){
+              //        dialogueBox.SetActive(false);
+              //        dialogueText.text = "..."; //reset text
+              //        counter = 0; //reset counter
+              // }
        }
 
        public void OpenDialogue(){
               dialogueBox.SetActive(true);
+              dialogueBG.SetActive(true);
        }
 
        public void CloseDialogue(){
               dialogueBox.SetActive(false);
-              dialogueText.text = "..."; //reset text
+              dialogueBG.SetActive(false);
+              dialogueText.text = ""; //reset text
               counter = 0; //reset counter
        }
 
