@@ -33,6 +33,7 @@ public class NPCDialogueManager : MonoBehaviour {
 
        public void OpenDialogue(){
               dialogueBox.SetActive(true);
+              dialogueText.text = "You want to go to the surface? You'll die trying.";
               dialogueBG.SetActive(true);
        }
 
@@ -56,6 +57,7 @@ public class NPCDialogueManager : MonoBehaviour {
               }
               else { //when lines are complete:
                      dialogueBox.SetActive(false); //turn off the dialogue display
+                     dialogueBG.SetActive(false);
                      dialogueText.text = "..."; //reset text
                      counter = 0; //reset counter
               }
