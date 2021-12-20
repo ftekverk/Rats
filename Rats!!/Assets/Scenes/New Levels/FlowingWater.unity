@@ -3047,8 +3047,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f1c2e46decd441638f606e6948f904d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveDelay: 1
-  moveRate: 1.4
+  moveDelay: 1.5
+  moveRate: 1.2
   isVertical: 1
   startMove: 0
   maxSpeed: 1
