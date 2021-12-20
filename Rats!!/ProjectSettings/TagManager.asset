@@ -11,6 +11,7 @@ TagManager:
   - HealthThree
   - Spike
   - Checkpoint
+  - DialogueManager
   layers:
   - Default
   - TransparentFX
