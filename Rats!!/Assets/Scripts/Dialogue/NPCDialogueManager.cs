@@ -33,7 +33,7 @@ public class NPCDialogueManager : MonoBehaviour {
 
        public void OpenDialogue(){
               dialogueBox.SetActive(true);
-              dialogueText.text = "You want to go to the surface? You'll die trying.";
+              dialogueText.text = "";
               dialogueBG.SetActive(true);
        }
 

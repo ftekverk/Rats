@@ -23,6 +23,7 @@ public class NPCDialogue : MonoBehaviour {
                      playerInRange = true;
                      dialogueMNGR.LoadDialogueArray(dialogue, dialogueLength);
                      dialogueMNGR.OpenDialogue();
+                     dialogueMNGR.DialogueNext();
                      //anim.SetBool("Chat", true);
                      //Debug.Log("Player in range");
               }
