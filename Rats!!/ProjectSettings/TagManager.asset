@@ -12,6 +12,7 @@ TagManager:
   - Spike
   - Checkpoint
   - DialogueManager
+  - WaterDrop
   layers:
   - Default
   - TransparentFX
