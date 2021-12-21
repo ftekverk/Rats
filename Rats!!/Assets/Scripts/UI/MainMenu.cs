@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene("TutorialScene");
+        SceneManager.LoadScene("PipesBetween1 1");
     }
 
     public void QuitGame()
