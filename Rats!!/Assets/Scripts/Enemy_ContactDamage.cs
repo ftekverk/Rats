@@ -13,12 +13,15 @@ public class Enemy_ContactDamage : MonoBehaviour
     public Collider2D anotherCollider;
     public PlayerHealth playerhealth;
     public bool canDamage = true;
+    public AudioClip ratDamage;
+    AudioSource audio;
     
     // Start is called before the first frame update
     void Start()
     {
         rat = GameObject.FindWithTag("Player");
         monster = GameObject.FindWithTag("Monster");
+        audio = GetComponent<AudioSource>(); 
     }
 
     // Update is called once per frame
@@ -42,6 +45,8 @@ public class Enemy_ContactDamage : MonoBehaviour
                     rat.transform.position = new Vector3(transform.position.x + pushback, transform.position.y + 1, -1);
                 }
 
+                audio.clip = ratDamage;
+                audio.Play();
                 
                 playerhealth.numHealth--;
                 canDamage = false;

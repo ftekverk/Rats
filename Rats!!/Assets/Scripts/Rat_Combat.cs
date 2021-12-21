@@ -6,11 +6,20 @@ using System.Threading;
 public class Rat_Combat : MonoBehaviour
 {
    public Animator animator;
+   
+   public AudioClip sword;
+   public AudioClip monster;
+   AudioSource audio;
 
    public Transform attackPoint;
    public float attackRange = 0.5f;
    public LayerMask enemyLayers;
-
+   
+   void Start() {
+     
+     audio = GetComponent<AudioSource>(); 
+     
+   }
     // Update is called once per frame
     void Update()
     {
@@ -20,6 +29,9 @@ public class Rat_Combat : MonoBehaviour
     }
 
     void Attack() {
+      
+        audio.clip = sword;
+        audio.Play();
         //Play attack animation
         animator.SetTrigger("Attack");
 
@@ -28,6 +40,8 @@ public class Rat_Combat : MonoBehaviour
         //Damage them
 
         foreach(Collider2D enemy in hitEnemies) {
+           audio.clip = monster;
+           audio.Play();
            enemy.GetComponent<Enemy>().TakeDamage(5);
            Thread.Sleep(100);
         }
