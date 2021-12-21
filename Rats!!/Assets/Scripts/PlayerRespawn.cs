@@ -7,22 +7,20 @@ using UnityEngine.SceneManagement;
 public class PlayerRespawn : MonoBehaviour
 {
     public Transform pSpawn;       // current player spawn point
-    public HitByWater healthscript;
+    public PlayerHealth healthscript;
     bool reset_level = true;
     public Vector3 pSpn2;
-
     public FlowWater waterScript;
 
     void Start()
     {
-       
+
     }
 
     void Update()
     {
         if (healthscript.numHealth <= 0)
         {
-            
             if (reset_level)
             {
                 SceneManager.LoadScene("FlowingWater");
@@ -31,11 +29,11 @@ public class PlayerRespawn : MonoBehaviour
             {
                 pSpn2 = new Vector3(pSpawn.position.x, pSpawn.position.y, transform.position.z);
                 gameObject.transform.position = pSpn2;
-                waterScript.playerRespawningResetWater();
                 healthscript.numHealth = 3;
                 healthscript.healthBar[0].SetActive(true);
                 healthscript.healthBar[1].SetActive(true);
                 healthscript.healthBar[2].SetActive(true);
+                waterScript.playerRespawningResetWater();
             }
         }
 

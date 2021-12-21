@@ -9,6 +9,7 @@ public class LightDarkRespawn : MonoBehaviour
     public PlayerHealth healthscript;
     bool reset_level = true;
     public Vector3 pSpn2;
+    public string sceneName;
 
 
     void Start()
@@ -23,7 +24,7 @@ public class LightDarkRespawn : MonoBehaviour
             //comment out lines from GameHandler about EndLose screen
             if (reset_level)
             {
-                SceneManager.LoadScene("LightDark");
+                SceneManager.LoadScene(sceneName);
             }
             if (pSpawn != null)
             {
