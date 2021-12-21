@@ -3057,7 +3057,7 @@ MonoBehaviour:
   forceVector: {x: 0, y: 0}
   healthscript: {fileID: 1633019464}
   player: {fileID: 1633019472}
-  respawnScript: {fileID: 1633019473}
+  respawnScript: {fileID: 0}
 --- !u!212 &610850664
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6476,6 +6476,79 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1450481697
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1450481700}
+  - component: {fileID: 1450481699}
+  - component: {fileID: 1450481698}
+  m_Layer: 0
+  m_Name: GameObject (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1450481698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450481697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12c3a9604df41194da9c0ddb9ce00019, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectCollider: {fileID: 1450481699}
+  anotherCollider: {fileID: 1633019469}
+  playerhealth: {fileID: 1633019461}
+--- !u!61 &1450481699
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450481697}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 24.83731, y: -0.076441884}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 106.59468, y: 0.84711623}
+  m_EdgeRadius: 0
+--- !u!4 &1450481700
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450481697}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -27.2, y: -18.33, z: -42.32722}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 28
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1555255749
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6710,8 +6783,8 @@ GameObject:
   - component: {fileID: 1633019463}
   - component: {fileID: 1633019461}
   - component: {fileID: 1633019464}
-  - component: {fileID: 1633019473}
   - component: {fileID: 1633019462}
+  - component: {fileID: 1633019473}
   m_Layer: 0
   m_Name: Rat
   m_TagString: Player
@@ -6783,10 +6856,8 @@ MonoBehaviour:
   waterRb: {fileID: 610850662}
   rb: {fileID: 1633019470}
   ratBody: {fileID: 1633019469}
-  healthBar: []
-  numHealth: 3
-  sceneName: 
   knockupSpeed: 5
+  healthscript: {fileID: 1633019461}
 --- !u!114 &1633019465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6978,11 +7049,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1633019460}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ee43c1f8c97a3149baf015ce8b2077a, type: 3}
+  m_Script: {fileID: 11500000, guid: f68abd47444f640368be8464281d1149, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pSpawn: {fileID: 0}
-  healthscript: {fileID: 1633019464}
+  healthscript: {fileID: 1633019461}
   pSpn2: {x: 0, y: 0, z: 0}
   waterScript: {fileID: 610850663}
 --- !u!1001 &1776645424

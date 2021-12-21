@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class PlayerRespawn : MonoBehaviour
 {
     public Transform pSpawn;       // current player spawn point
-    public HitByWater healthscript;
+    public PlayerHealth healthscript;
     bool reset_level = true;
     public Vector3 pSpn2;
     public FlowWater waterScript;
@@ -21,7 +21,6 @@ public class PlayerRespawn : MonoBehaviour
     {
         if (healthscript.numHealth <= 0)
         {
-
             if (reset_level)
             {
                 SceneManager.LoadScene("FlowingWater");
