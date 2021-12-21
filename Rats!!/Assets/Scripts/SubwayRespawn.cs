@@ -22,7 +22,7 @@ public class SubwayRespawn : MonoBehaviour
         {
             if (reset_level)
             {
-                SceneManager.LoadScene("FlowingWater");
+                SceneManager.LoadScene("Subway");
             }
             if (pSpawn != null)
             {
