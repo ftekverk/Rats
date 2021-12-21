@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6430837114871457387
+--- !u!1 &295904501629720330
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6430837114871457386}
-  - component: {fileID: 6430837114871457385}
+  - component: {fileID: 295904501629720329}
+  - component: {fileID: 295904501629720328}
   m_Layer: 0
   m_Name: Water_droplet
   m_TagString: Untagged
@@ -17,27 +17,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6430837114871457386
+--- !u!4 &295904501629720329
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6430837114871457387}
+  m_GameObject: {fileID: 295904501629720330}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.04, y: 0.01, z: 5.774133}
   m_LocalScale: {x: 0.07, y: 0.07, z: 0}
   m_Children: []
-  m_Father: {fileID: 6430837115804826029}
+  m_Father: {fileID: 295904502015104452}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &6430837114871457385
+--- !u!212 &295904501629720328
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6430837114871457387}
+  m_GameObject: {fileID: 295904501629720330}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &6430837115804826032
+--- !u!1 &295904502015104472
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -91,10 +91,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6430837115804826029}
-  - component: {fileID: 6430837115804826030}
-  - component: {fileID: 6430837115804826031}
-  - component: {fileID: 7074903273485275753}
+  - component: {fileID: 295904502015104452}
+  - component: {fileID: 295904502015104453}
+  - component: {fileID: 295904502015104454}
+  - component: {fileID: 295904502015104455}
   m_Layer: 0
   m_Name: waterdrop
   m_TagString: WaterDrop
@@ -102,28 +102,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6430837115804826029
+--- !u!4 &295904502015104452
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6430837115804826032}
+  m_GameObject: {fileID: 295904502015104472}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -25.64, y: -24.46, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children:
-  - {fileID: 6430837114871457386}
+  - {fileID: 295904501629720329}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &6430837115804826030
+--- !u!58 &295904502015104453
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6430837115804826032}
+  m_GameObject: {fileID: 295904502015104472}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -133,14 +133,14 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!50 &6430837115804826031
+--- !u!50 &295904502015104454
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6430837115804826032}
+  m_GameObject: {fileID: 295904502015104472}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -154,19 +154,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 5
---- !u!114 &7074903273485275753
+--- !u!114 &295904502015104455
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6430837115804826032}
+  m_GameObject: {fileID: 295904502015104472}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13a877547c247f74ba6ffd7be0c13579, type: 3}
+  m_Script: {fileID: 11500000, guid: 7ee18977fcd095340987944f1694b23c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectCollider: {fileID: 0}
-  anotherCollider: {fileID: 6430837115804826030}
-  playerhealth: {fileID: 0}
-  canDamage: 1
