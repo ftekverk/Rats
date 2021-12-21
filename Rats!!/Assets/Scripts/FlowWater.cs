@@ -16,7 +16,7 @@ public class FlowWater : MonoBehaviour
 
      public HitByWater healthscript;
     public Transform player;
-    public PlayerRespawn respawnScript;
+    public WaterFlowingRespawn respawnScript;
 
     // Start is called before the first frame update
     void Start()
