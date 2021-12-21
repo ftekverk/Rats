@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/New Levels/VerticalPipeLevel.unity
     guid: 29449e07a500b514cacd8a03c79409d7
+  - enabled: 1
+    path: Assets/Scenes/New Levels/EndScreen.unity
+    guid: f1fea877500ccce43b0a7fcdaece5ffd
   m_configObjects: {}
