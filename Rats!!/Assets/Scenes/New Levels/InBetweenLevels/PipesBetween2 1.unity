@@ -6861,8 +6861,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1242225798}
-  sword: {fileID: 0}
-  monster: {fileID: 8300000, guid: 7741b45e4daf5af4c868ac719c1222f7, type: 3}
+  sword: {fileID: 8300000, guid: 7741b45e4daf5af4c868ac719c1222f7, type: 3}
+  monster: {fileID: 8300000, guid: 9e66f408a1519094bb8b698f9b8ba001, type: 3}
   attackPoint: {fileID: 1271353653}
   attackRange: 0.25
   enemyLayers:
