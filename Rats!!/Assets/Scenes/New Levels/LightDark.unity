@@ -9490,7 +9490,6 @@ GameObject:
   - component: {fileID: 1633019466}
   - component: {fileID: 1633019465}
   - component: {fileID: 1633019463}
-  - component: {fileID: 1633019462}
   - component: {fileID: 1633019461}
   - component: {fileID: 1633019464}
   - component: {fileID: 1633019473}
@@ -9518,26 +9517,6 @@ MonoBehaviour:
   healthBar: []
   numHealth: 3
   sceneName: LightDark
---- !u!114 &1633019462
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1633019460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2847bc2661c5fa94bb5d584b461a8a51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 1633019463}
-  sword: {fileID: 0}
-  monster: {fileID: 0}
-  attackPoint: {fileID: 1321209694}
-  attackRange: 0.25
-  enemyLayers:
-    serializedVersion: 2
-    m_Bits: 128
 --- !u!95 &1633019463
 Animator:
   serializedVersion: 3
