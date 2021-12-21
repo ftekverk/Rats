@@ -47,4 +47,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/New Levels/EndScreen.unity
     guid: f1fea877500ccce43b0a7fcdaece5ffd
+  - enabled: 1
+    path: Assets/Scenes/New Levels/InBetweenLevels/PipesBetween1 1.unity
+    guid: 3c859e51dfcf14796ae1266f89528081
+  - enabled: 1
+    path: Assets/Scenes/New Levels/InBetweenLevels/PipesBetween2 1.unity
+    guid: c5e4318baa158483a8a87df308825596
+  - enabled: 1
+    path: Assets/Scenes/New Levels/InBetweenLevels/PipesBetween2 3.unity
+    guid: f1247d14b6e7c4690b944ed1cb609b52
+  - enabled: 1
+    path: Assets/Scenes/New Levels/InBetweenLevels/PipesBetween3.unity
+    guid: afea882f60a074fbea1b5cac36671186
+  - enabled: 1
+    path: Assets/Scenes/New Levels/InBetweenLevels/PipesBetween5 1.unity
+    guid: 42998a456baa549789aa35cd5d38a434
   m_configObjects: {}
