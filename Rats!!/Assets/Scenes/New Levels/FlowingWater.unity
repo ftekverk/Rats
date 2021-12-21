@@ -3057,7 +3057,7 @@ MonoBehaviour:
   forceVector: {x: 0, y: 0}
   healthscript: {fileID: 1633019464}
   player: {fileID: 1633019472}
-  respawnScript: {fileID: 0}
+  respawnScript: {fileID: 1633019473}
 --- !u!212 &610850664
 SpriteRenderer:
   m_ObjectHideFlags: 0
