@@ -9596,6 +9596,7 @@ MonoBehaviour:
   pSpawn: {fileID: 0}
   healthscript: {fileID: 1633019461}
   pSpn2: {x: 0, y: 0, z: 0}
+  sceneName: LightDark
 --- !u!114 &1633019465
 MonoBehaviour:
   m_ObjectHideFlags: 0
